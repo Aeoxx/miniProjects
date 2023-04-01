@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: rgba(137, 142, 236, 0.603);
+}
+
+img {
+  border-radius: 20px;
+  cursor: pointer;
+  margin: 25px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.btn {
+  font-family: "Indie Flower";
+  font-size: 32px;
+  display: inline-block;
+  border: 1px solid rgb(36, 43, 16);
+  background-color: rgba(214, 214, 28, 0.505);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.miniImg__wrapper {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* gap: 50px; */
+}
+
+.miniImg {
+  max-width: 200px;
+}
+.miniImg__wrapper img:first-child,
+.miniImg__wrapper img:last-child {
+  width: 0;
+  margin: 0;
+}
+.miniImg__wrapper img {
+  width: 200px;
+}
+.miniImg__wrapper img.hiden {
+  transition: all 0.3s;
+  width: 0;
+  margin: 0;
+  height: 0;
+}
+.miniImg__wrapper img.open {
+  transition: all 0.3s;
+  width: 200px;
+  margin: 25px;
+}

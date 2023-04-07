@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Lato:wght@400;700&display=swap"
+    rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/colorBox.css" />
+    <title>Document</title>
+  </head>
+  <body>
+  
+      <div class="welcome">
+        <div class="red-cross__box"><img class="red-cross__img" src="./img/red-cross.png" alt="#"></div>
+        <h1>RULES:</h1>
+        <p>Left Mouse Click - change color</p>
+        <p>Right Mouse Click - change location</p>
+        <p>Ranges in right top corner - change the shape</p>
+      </div>
+  
+      <div class="controls disable">
+        <div>
+          <p>width (30 - 100)</p>
+          <input class="sizeWidth" min="30" value="50" type="range" max="100" />
+        </div>
+        <div>
+          <p>height (30 - 100)</p>
+          <input class="sizeHeight" min="30" value="50" type="range" max="100" />
+        </div>
+        <div>
+          <p>border-radius (0 - 50)</p>
+          <input class="radius" min="0" value="0" type="range" max="50" />
+        </div>
+      </div>
+  
+      <div class="box disable"></div>
+
+      <div class="boxes">
+
+      </div>
+
+    <script src="./js/colorBox.js"></script>
+  </body>
+</html>

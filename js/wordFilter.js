@@ -6,7 +6,7 @@ const input = document.querySelector('.input')
 
 const logical = () => {
   container.innerHTML = person
-    .filter((elem) => elem.value.includes(input.value)  ) // use indexOf
+    .filter((elem) => elem.value.toLowerCase().includes(input.value.toLowerCase())  ) // use indexOf
     .map((elem) => `<p>${elem.value}</p>`)
     .join('')
 };

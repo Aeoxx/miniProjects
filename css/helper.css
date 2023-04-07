@@ -1,5 +1,31 @@
-header {
-  background-color: red;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  font-size: 32px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.project-menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 20px;
+  background: rgb(110, 220, 110);
+  color: #fff;
+}
+
+.project-menu a:hover {
+  text-decoration: underline;
+  color: blueviolet;
 }
 
 /*----------------> My Projects Styles <----------------- */

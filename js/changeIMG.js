@@ -2,32 +2,32 @@
 const data = [
   {
     text: 'some text',
-    name: 'Kasha',
+    name: 'Oatmeal',
     src: 'im1.jpg'
   },
   {
     text: 'some text',
-    name: 'Kasha2',
+    name: 'Omlet',
     src: 'im2.jpg'
   },
   {
     text: 'some text',
-    name: 'Kasha3',
+    name: 'Ingredients',
     src: 'im3.jpg'
   },
   {
     text: 'some text',
-    name: 'Kasha4',
+    name: 'Carrot Pie',
     src: 'im4.jpg'
   },
   {
     text: 'some text',
-    name: 'Kasha5',
+    name: 'Сheesecakes',
     src: 'im5.jpg'
   },
   {
     text: 'some text',
-    name: 'Kasha6',
+    name: 'Spinach Mousse',
     src: 'im6.jpg'
   }
 ]

@@ -1,7 +1,7 @@
 let num = 1
 const id = () => num++
 
-const tasks = [
+let tasks = [
   { name: "Wake up ", id: id(), completed: false },
   { name: "Take a shower", id: id(), completed: false },
   { name: "Make breakfast", id: id(), completed: true },
@@ -28,8 +28,6 @@ const LS = {
 }
 
 // logical
-
-
 
 const createNewTask = () => { // функція, що відповідає за створення нових пунктів завдань
   const newTask = { // функція починається з того, що створюється новий об'єкт //* цей об'єкт повинен мати усі властивості як об'єкт із початкового масиву з об'єктами
@@ -59,6 +57,7 @@ const createTodo = (elem) => { // функція, що відображає за
   btnRemove.className = 'btnRemove'
   checkbox.checked = elem.completed;
   div.className = 'items'
+  inputText.className = 'inputText'
 
   // events
 
@@ -85,11 +84,11 @@ const createTodo = (elem) => { // функція, що відображає за
       const newName = inputText.value
       span.textContent = newName
       div.insertBefore(span, btnRemove);
+      elem.name = newName
+      LS.set()
     }
 
   }
-
-
 
   div.append(checkbox, span, btnRemove)
 
@@ -107,28 +106,10 @@ const createAll = (data = tasks) => data.forEach(createTodo)
   //start 
   ; (function () {
 
-    // ls
-    const data = LS.get(); // null or []
+    const data = LS.get(); 
 
-    if (data === null) createAll()
-    else createAll(data)
-  })()
-
-
-
-
-
-
-
-// // defoult date
-// const d = document.querySelector('div');
-
-// // logical
-// const log = () => console.log(12);
-
-// // events
-// d.onclick = log;
-
-// //start
-// log()
-
+    if (data)  tasks = data;
+     createAll()
+    // if (data === null) createAll()
+    // else createAll(data)
+  })();

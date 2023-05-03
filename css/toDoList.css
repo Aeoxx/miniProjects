@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(19, 126, 153);
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.input {
+  width: 300px;
+  height: 40px;
+  font-size: 24px;
+  border: 3px solid rgb(247, 182, 42);
+  border-radius: 5px;
+  outline: none;
+}
+
+.btn {
+  width: 150px;
+  height: 30px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 700;
+  background-color: rgb(50, 156, 24);
+  color: bisque;
+  letter-spacing: 2px;
+}
+
+.general {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  gap: 30px;
+}
+
+.boxes {
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  background-color: rgb(247, 182, 42);
+  width: 900px;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.items {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+}
+
+.btnRemove {
+  width: 20px;
+  height: 20px;
+  background-color: rgba(228, 29, 29, 0.815);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 20px;
+  border: none;
+}

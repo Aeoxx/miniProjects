@@ -1,32 +1,26 @@
 // default
 const data = [
   {
-    text: 'some text',
     name: 'Oatmeal',
     src: 'im1.jpg'
   },
   {
-    text: 'some text',
     name: 'Omlet',
     src: 'im2.jpg'
   },
   {
-    text: 'some text',
     name: 'Ingredients',
     src: 'im3.jpg'
   },
   {
-    text: 'some text',
     name: 'Carrot Pie',
     src: 'im4.jpg'
   },
   {
-    text: 'some text',
     name: 'Сheesecakes',
     src: 'im5.jpg'
   },
   {
-    text: 'some text',
     name: 'Spinach Mousse',
     src: 'im6.jpg'
   }
@@ -50,7 +44,7 @@ const showElem = (num = 0) => {
   const elem = data[num];
   console.log(1);
   img.src = `img/` + elem.src;
-  text.textContent = elem.text;
+  text.textContent = elem.name;
 }
 
 // events

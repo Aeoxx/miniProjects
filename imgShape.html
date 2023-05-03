@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/helper.css"/>
+  <link rel="stylesheet" href="./css/imgShape.css"/>
+  <title>Document</title>
+</head>
+<header class="project-menu">
+  <a href="./slider.html">Slider</a>
+  <a href="./changeIMG.html">changeIMG</a>
+  <a href="./colorBox.html">Color Box</a>
+  <a href="./wordFilter.html">Word Filter</a>
+  <a href="./toDoList.html">To Do List</a>
+  <a href="./buttonMore.html">Add IMGs</a>
+  <a href="./imgShape.html">Img Shape</a>
+</header>
+
+<body>
+  <div class="bg-animation"></div>
+
+
+<section class="sec1">
+
+  <div class="boxes">
+    <img class="carImg"  draggable="true" src="./img/car1.jpg" alt="">
+  </div>
+  <div class="controls">
+      <div class="control">
+        <p>widht</p>
+           <input class= "imgWidth controlInput" min="100" max="500" value="355" type="range" name="width">
+      </div>
+      <div class="control">
+        <p>height</p>
+           <input class="imgHeight controlInput" min="100" max="500" value="200" type="range" name="height">
+      </div>
+      <div class="control">
+        <p> border-top-right-radius</p>
+           <input class="imgHeight controlInput" min="0" max="250" value="0" type="range" name="border-top-right-radius">
+      </div>
+      <div class="control">
+        <p>border-bottom-left-radius</p>
+           <input class="imgHeight controlInput" min="0" max="250" value="0" type="range" name="border-bottom-left-radius">
+      </div>
+      <div class="control">
+        <p>border-top-left-radius</p>
+           <input class="imgHeight controlInput" min="0" max="250" value="0" type="range" name="border-top-left-radius">
+      </div>
+      <div class="control">
+        <p>border-bottom-right-radius</p>
+           <input class="imgHeight controlInput" min="0" max="250" value="0" type="range" name="border-bottom-right-radius">
+      </div>
+      <div class="control">
+        <p>blur</p>
+           <input class="imgHeight controlInput" min="0" max="10" value="0" type="range" name="filter">
+      </div>
+    </div>
+  </div>
+  
+ </section>
+  <script src="./js/imgShape.js"></script>
+</body>
+</html>
